@@ -1,4 +1,14 @@
 
+/*Modal send Melding - foreløpig bare koblet til index.html*/
+$("#sendInn").submit(function (event){
+    const melding = {
+        firstname : $("#firstName").val(),
+        lastname : $("#lastname").val(),
+        textArea : $("#textArea").val()
+    }
+    $.post("/sendMelding", melding, function () {
+    })
+});
 
 $(document).ready(function () {
     //Owl
