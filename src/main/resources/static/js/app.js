@@ -1,4 +1,17 @@
+$('#form1').submit(function () {
+    alert("This function is currently unavailable, please contact via email or social media")
+const melding = {
+    fornavn : $("#userFirstName").val(),
+    etternavn : $("#userLastName").val(),
+    email : $("#userEmail").val(),
+    melding : $("#userMessage").val()
+}
 
+const url = "/sendMelding"
+    $.post(url, melding, function (){
+
+    })
+})
 
 $(document).ready(function () {
     //Owl
